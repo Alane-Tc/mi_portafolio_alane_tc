@@ -1,5 +1,14 @@
-@import "../../../../styles";
+@import "../../../../styles", "../../sass/fonts";
 
 ._article{
     margin-top: 5rem;
+
+    h3{
+        font-size: 22px;
+    }
+}
+
+.titulo{
+    font-size: 60px;
+    font-family: SmoochSansBold;
 }

@@ -1,4 +1,4 @@
-@import "../sass/text_decoration";
+@import "../sass/text_decoration", '../sass/fonts';
 
 .sombreado{
     background-color: #00000088 !important;
@@ -45,12 +45,14 @@
     font-size: 60px;
     @include textDecorationWhite();
     margin-top: 2rem;
+    font-family: RobotoBoldItalic;
 }
 
 #puesto_titulo{
     @include textDecorationBlack();
     font-size: 20px;
     margin-top: 2rem;
+    font-family: RobotoBoldItalic;
 }
 
 #navbar-color{
