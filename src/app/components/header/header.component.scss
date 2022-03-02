@@ -1,0 +1,87 @@
+@import "../sass/text_decoration";
+
+.sombreado{
+    background-color: #00000088 !important;
+    height: 100%;
+}
+
+#index{
+    background-image: url('../../../assets/img/imagen_codigo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    max-width: auto;
+    height: 60.9vh;
+    font-size: 20px;
+    color: white;
+    min-height: 500px;
+}
+
+#logo-img{
+    width: 50px;
+    height: 50px;
+}
+
+#offcanvasNavbarLabel{
+    color: white;
+    @include textDecorationBlack()
+}
+
+.offcanvas-start {
+    width: 210px;
+    background: #03012C;
+   
+}
+
+
+#foto-perfil{
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+#nombre_titulo{
+    color: #3B82F6;
+    font-size: 60px;
+    @include textDecorationWhite();
+}
+
+#puesto_titulo{
+    @include textDecorationBlack();
+}
+
+#navbar-color{
+    background: #03012C !important;
+    padding: 20px;
+}
+
+.nav-item{
+    a{
+        color: white;
+    }
+
+    a:hover{
+        color: #45C2B7;
+    }
+}
+
+
+#nombre_titulo {
+display: block;
+font-family: monospace;
+white-space: nowrap;
+border-right: 4px solid;
+width: 12ch;
+
+animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+overflow:hidden;
+}
+
+@keyframes typing {
+
+    from { width: 0}
+}
+
+@keyframes blink {
+ 50% { border-color: transparent}
+}
