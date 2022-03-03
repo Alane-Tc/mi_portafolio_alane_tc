@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './components/pages/about-me/about-me.component';
 import { SkillsComponent } from './components/pages/skills/skills.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjectsComponent } from './components/pages/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     HomeComponent,
     AboutMeComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
