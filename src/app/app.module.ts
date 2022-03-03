@@ -10,6 +10,7 @@ import { SkillsComponent } from './components/pages/skills/skills.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ExperienceComponent } from './components/pages/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutMeComponent,
     SkillsComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

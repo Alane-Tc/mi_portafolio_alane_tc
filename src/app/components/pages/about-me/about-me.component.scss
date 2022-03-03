@@ -6,9 +6,24 @@
     h3{
         font-size: 22px;
     }
+    
+    animation: bounceIn; 
+    animation-duration: 2s; 
 }
 
 .titulo{
     font-size: 60px;
     font-family: SmoochSansBold;
+    animation: bounceIn; 
+    animation-duration: 2s; 
+}
+
+#img-about-me{
+    animation: bounceIn; 
+    animation-duration: 2s; 
+}
+
+#img-about-me:hover{
+    animation: flash; 
+    animation-duration: 2s; 
 }

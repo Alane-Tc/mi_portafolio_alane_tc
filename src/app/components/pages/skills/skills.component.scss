@@ -2,11 +2,20 @@
 .icons{
     font-size: 125px;
     margin-left: 1rem;
+    cursor: pointer;
+    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */ 
+}
+
+.icons:hover{
+    animation: flash; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */ 
 }
 
 #html{
     color: #E44D25;
 }
+
 
 #css{
     color: #379AD6;
