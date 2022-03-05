@@ -1,0 +1,12 @@
+@import "../../../../styles", "../../sass/fonts";
+
+.works{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.works:hover{
+    animation: fadeIn; 
+    animation-duration: 2s;
+}
