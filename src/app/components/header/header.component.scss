@@ -30,7 +30,7 @@
 
 .offcanvas-start {
     width: 210px;
-    background: #03012C;
+    background: #315659;
    
 }
 
@@ -56,17 +56,20 @@
 }
 
 #navbar-color{
-    background: #03012C !important;
+    background: #315659 !important;
     padding: 20px;
 }
 
 .nav-item{
     a{
         color: white;
+        font-size: 18px;
     }
 
     a:hover{
-        color: #45C2B7;
+        color: #253031;
+        animation: bounce; 
+        animation-duration: 2s; 
     }
 }
 
