@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceComponent } from './components/pages/experience/experience.component';
+import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ExperienceComponent } from './components/pages/experience/experience.co
     SkillsComponent,
     ProjectsComponent,
     FooterComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
