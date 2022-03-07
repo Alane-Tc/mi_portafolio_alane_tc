@@ -3,6 +3,10 @@
 html, body { height: 100%; background: #F8FBFE; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+$color-primary: #DA1F50;
+$color-secundary: #9b1639;
+$color-hover: #253031;
+
 /*Botones*/
     .bnt-rojo{
         background: #DA1F50;
@@ -13,6 +17,63 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
         background: #9b1639;
         color: white;
     }
+
+    // Botones
+
+.boton-1 {
+    padding: 10px 30px;
+    background: $color-primary;
+    margin: 10px 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white !important;
+    font-weight: 400;
+    font-size: 16px !important;
+    border: 2px solid $color-primary;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px $color-primary;
+
+    .ion-icon {
+        font-size: 20px;
+        margin: -3px 2px;
+    }
+
+    &:hover {
+        color: white;
+        transition: all .3s;
+        border: 2px solid $color-secundary;
+        background-color: $color-hover;
+        text-decoration: none !important;
+    }
+}
+
+.boton-2 {
+    padding: 10px 30px;
+    background: $color-secundary;
+    margin: 10px 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white !important;
+    font-weight: 400;
+    font-size: 16px !important;
+    border: 2px solid $color-secundary;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px $color-secundary;
+
+    .ion-icon {
+        font-size: 20px;
+        margin: -3px 2px;
+    }
+
+    &:hover {
+        transition: all .3s;
+        border: 2px solid $color-primary;
+        background-color: $color-hover;
+        text-decoration: none !important;
+        color: white !important;
+    }
+}
+
 
 .titulos_principales{
         font-size: 60px;
