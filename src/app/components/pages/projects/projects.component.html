@@ -5,98 +5,152 @@
 <button id="btn-go-up" class="boton-1" onclick="topFunction()"><i class="fa-solid fa-angle-up"></i></button>
 
 <div class="container">
-    <div class="row mt-5">
+    <div class="row mt-5 mb-5">
         <div class="col-md-12">
             <h1 class="text-center titulos_principales">Portafolio</h1>
         </div>
 
+        <div class="col-md-4">
+            <label for="exampleFormControlInput1" class="form-label">Seleccione un tipo de proyecto</label>
+            <select class="form-select" id="filtro_proyectos" onchange="filtroProyectos()">
+                <option selected disabled>Seleccione una opción</option>
+                <option value="proyectos_personales">Proyectos personales</option>
+                <option value="proyectos_freelancer">Proyectos de Freelancer</option>
+                <option value="proyectos_diseño">Diseño Grafico</option>
+            </select>
+        </div>
+        
+        <section id="principal" class="mostrar mt-3">
+             <img class="img-coding" src="../../../../assets/icons/Hand coding-cuate.svg" alt="Computadora">
+        </section>
+
         <!--Proyectos personales-->
-        <div class="col-md-6">
-            <h2><b>Proyectos personales</b></h2>
-        </div>
+        <section id="proyectos_personales" class="ocultar">
+            <div class="col-md-12">
+                <h2 class="text-center mt-3"><b>Proyectos personales</b></h2>
+                <div class="portafolio">
+                    <div class="tarjetas">
+                        <div>
+                            <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_1.png"
+                                alt="Formato_apa">
+                        </div>
 
-        <div class="col-md-12">
-            <div class="portafolio">
-                <div class="tarjetas">
-                    <div>
-                        <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_1.png"
-                            alt="Formato_apa">
+                        <article class="text">
+                            <h2><b>Formato Apa</b></h2>
+                            <p>Una aplicación web de generador de formato apa.</p>
+                            <p>Html + Css + Javascript + Bootstrap</p>
+                            <a href="https://github.com/Alane-Tc/FormatoApa" target="_blank">
+                                <button class="boton_proyecto_secundario">Ver repositorio <i
+                                        class="fa-brands fa-github ion-icon"></i></button></a>
+                            <a href="https://formatoapa.netlify.app" target="_blank">
+                                <button class="boton_proyecto_primario">Ver proyecto <i
+                                        class="fa-solid fa-eye"></i></button>
+                            </a>
+                        </article>
                     </div>
 
-                    <article>
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro aut minima sapiente
-                            ducimus praesentium, accusantium quos, ut dolore repudiandae aspernatur natus suscipit
-                            velit. Fugiat fugit sunt dolore molestias repellat?</h3>
-                    </article>
-                </div>
+                    <div class="tarjetas">
+                        <div>
+                            <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_4.jpg"
+                                alt="Formato_Apa_Escritorio">
+                        </div>
 
-                <div class="tarjetas">
-                    <div>
-                        <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_4.jpg"
-                            alt="Formato_Apa_Escritorio">
+                        <article class="text">
+                            <h2><b>Formato Apa Desktop</b></h2>
+                            <p>Formato Apa en versión de escritorio desarrollada con electron</p>
+                            <p>Html + Css + Javascript + Bootstrap</p>
+                            <a href="https://github.com/Alane-Tc/FormatoApaDesktop" target="_blank"
+                                rel="noopener noreferrer">
+                                <button class="boton_proyecto_secundario">Ver repositorio <i
+                                        class="fa-brands fa-github ion-icon"></i></button></a>
+                            <a href="https://github.com/Alane-Tc/FormatoApaDesktop/tags" target="_blank"
+                                rel="noopener noreferrer">
+                                <button class="boton_proyecto_primario">Ver proyecto <i
+                                        class="fa-solid fa-eye"></i></button>
+                            </a>
+                        </article>
                     </div>
 
-                    <article>
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro aut minima sapiente
-                            ducimus praesentium, accusantium quos, ut dolore repudiandae aspernatur natus suscipit
-                            velit. Fugiat fugit sunt dolore molestias repellat?</h3>
-                    </article>
-                </div>
+                    <div class="tarjetas">
+                        <div>
+                            <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_2.png"
+                                alt="Cuantos-dias-faltan">
+                        </div>
 
-                <div class="tarjetas">
-                    <div>
-                        <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_2.png"
-                            alt="Cuantos-dias-faltan">
+                        <article class="text">
+                            <article class="text">
+                                <h2><b>Cuantos días faltan</b></h2>
+                                <p>Aplicación que calcula fácilmente el tiempo transcurrido entre dos fechas diferentes,
+                                    y/o
+                                    te da los días faltantes de las fechas festivas.</p>
+                                <p>Html + Sass + Javascript + Bootstrap</p>
+                                <a href="https://github.com/Alane-Tc/cuantos_dias_faltan" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button class="boton_proyecto_secundario">Ver repositorio <i
+                                            class="fa-brands fa-github ion-icon"></i></button></a>
+                                <a href="https://cuantosdiasfaltan.netlify.app" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button class="boton_proyecto_primario">Ver proyecto <i
+                                            class="fa-solid fa-eye"></i></button></a>
+                            </article>
+                        </article>
                     </div>
 
-                    <article>
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro aut minima sapiente
-                            ducimus praesentium, accusantium quos, ut dolore repudiandae aspernatur natus suscipit
-                            velit. Fugiat fugit sunt dolore molestias repellat?</h3>
-                    </article>
-                </div>
+                    <div class="tarjetas">
+                        <div>
+                            <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_3.png"
+                                alt="Loteria-mexicana">
+                        </div>
 
-                <div class="tarjetas">
-                    <div>
-                        <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_3.png"
-                            alt="Loteria-mexicana">
+                        <article class="text">
+                            <article class="text">
+                                <h2><b>Lotería Mexicana</b></h2>
+                                <p>Barajeo para el juego de mesa lotería mexicana.</p>
+                                <p>Html + Sass + Javascript + Bootstrap</p>
+                                <a href="https://github.com/Alane-Tc/Loteria-Mexicana" target="_blank">
+                                    <button class="boton_proyecto_secundario">Ver repositorio <i
+                                            class="fa-brands fa-github ion-icon"></i></button></a>
+                                <a href="https://correysevacorriendo.netlify.app" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button class="boton_proyecto_primario">Ver proyecto <i
+                                            class="fa-solid fa-eye"></i></button></a>
+                            </article>
+                        </article>
                     </div>
 
-                    <article>
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro aut minima sapiente
-                            ducimus praesentium, accusantium quos, ut dolore repudiandae aspernatur natus suscipit
-                            velit. Fugiat fugit sunt dolore molestias repellat?</h3>
-                    </article>
-                </div>
+                    <div class="tarjetas">
+                        <div>
+                            <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_5.png"
+                                alt="Poke-dex">
+                        </div>
 
-                <div class="tarjetas">
-                    <div>
-                        <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_5.png"
-                            alt="Poke-dex">
+                        <article class="text">
+                            <h2><b>PokeDex</b></h2>
+                            <p>Sitio web realizada con la API de pokemon, donde busca información de ataque y defensa de
+                                un
+                                pokemon</p>
+                            <p>Html + Sass + Javascript + Bootstrap</p>
+                            <a href="https://github.com/Alane-Tc/PokeDex" target="_blank" rel="noopener noreferrer">
+                                <button class="boton_proyecto_secundario">Ver repositorio <i
+                                        class="fa-brands fa-github ion-icon"></i></button></a>
+                            <a href="https://quienesesepokemon.netlify.app" target="_blank" rel="noopener noreferrer">
+                                <button class="boton_proyecto_primario">Ver proyecto <i
+                                        class="fa-solid fa-eye"></i></button></a>
+                        </article>
                     </div>
-
-                    <article>
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro aut minima sapiente
-                            ducimus praesentium, accusantium quos, ut dolore repudiandae aspernatur natus suscipit
-                            velit. Fugiat fugit sunt dolore molestias repellat?</h3>
-                    </article>
+                    <div class="tarjetas" style="background-color: #F8FBFE;"></div>
                 </div>
-
-                <div class="tarjetas">
-                    <div>
-                        <img class="img_proyecto" src="../../../../assets/img/proyectos-personales/proyecto_5.png"
-                            alt="Poke-dex">
-                    </div>
-
-                    <article>
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat porro aut minima sapiente
-                            ducimus praesentium, accusantium quos, ut dolore repudiandae aspernatur natus suscipit
-                            velit. Fugiat fugit sunt dolore molestias repellat?</h3>
-                    </article>
-                </div>
-
             </div>
-        </div>
+        </section>
+
+        <section id="proyectos_freelancer" class="ocultar">
+            <h1>Contenido de proyectos frelancer</h1>
+        </section>
+
+        <section id="proyectos_diseños" class="ocultar">
+            <h1>Contenido de diseños</h1>
+        </section>
+
     </div>
 </div>
 
