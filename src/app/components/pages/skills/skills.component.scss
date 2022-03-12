@@ -37,3 +37,28 @@
     color: #CD6799;
 }
 
+/*Responsive*/
+@media (max-width: 575.98px) { 
+    .p-5 {
+        padding: 1rem!important;
+    }
+
+    .icons{
+        font-size: 90px;
+    }
+    
+
+   
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    .p-5 {
+        padding: 2rem!important;
+    }
+
+    .icons{
+        font-size: 100px;
+    }
+
+}
