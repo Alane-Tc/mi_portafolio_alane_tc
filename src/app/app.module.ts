@@ -12,6 +12,7 @@ import { ProjectsComponent } from './components/pages/projects/projects.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceComponent } from './components/pages/experience/experience.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NotFoundComponent } from './components/pages/not-found/not-found.compon
     ProjectsComponent,
     FooterComponent,
     ExperienceComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
