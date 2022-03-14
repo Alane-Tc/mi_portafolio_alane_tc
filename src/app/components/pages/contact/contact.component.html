@@ -2,7 +2,54 @@
     <app-header></app-header>
 </header>
 
-<p>contact works!</p>
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-md-12">
+            <h1 class="text-center"><b>Contacto</b></h1>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="input_nombre" class="form-label"><b>Nombre</b></label>
+                            <input type="text" class="form-control" id="input_nombre" placeholder="Nombre">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="input_email" class="form-label"><b>Email</b></label>
+                            <input type="email" class="form-control" id="input_email" placeholder="ejemplo@mail.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="input_asunto" class="form-label"><b>Asunto</b></label>
+                            <input type="text" class="form-control" id="input_asunto" placeholder="Asunto">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="input_asunto" class="form-label"><b>Comentario</b></label>
+                            <textarea name="mensaje" cols="30" rows="5" class="form-control"
+                                placeholder="Escriba su mensaje" type="text"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Hola</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer>
     <app-footer></app-footer>
