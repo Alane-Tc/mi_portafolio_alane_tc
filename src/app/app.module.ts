@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceComponent } from './components/pages/experience/experience.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { NgwWowModule } from 'ngx-wow';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContactComponent } from './components/pages/contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgwWowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
