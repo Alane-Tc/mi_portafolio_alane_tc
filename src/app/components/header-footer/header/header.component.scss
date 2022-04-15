@@ -1,4 +1,4 @@
-@import "../sass/text_decoration", '../sass/fonts';
+@import "../../sass/text_decoration.scss", '../../sass/fonts';
 
 .sombreado{
     background-color: #00000088 !important;
@@ -6,7 +6,7 @@
 }
 
 #index{
-    background-image: url('../../../assets/img/imagen_codigo.jpg');
+    background-image: url('../../../../assets/img/imagen_codigo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
