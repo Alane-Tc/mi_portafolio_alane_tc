@@ -1,6 +1,6 @@
 @import '../../../../styles.scss';
 
- .boton-1 {
+.boton-1 {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -9,12 +9,21 @@
     padding: 10px 15px;
 }
 
-.titulos_principales{
+.titulos_principales {
     font-size: 60px;
     font-family: SmoochSansBold;
 }
 
-.portafolio{
+.subtitulo {
+    font-size: 55px;
+    font-family: SmoochSansBold;
+}
+
+.espacio_15 {
+    padding-top: 25px;
+}
+
+.portafolio {
     width: 100%;
     display: -webkit-box;
     //display: -ms-flexbox;
@@ -31,7 +40,7 @@
     flex-wrap: wrap;
 }
 
-.tarjetas{
+.tarjetas {
     width: 450px;
     margin: 20px auto;
     -webkit-box-sizing: border-box;
@@ -44,14 +53,14 @@
     object-fit: cover;
 }
 
-.img_proyecto{
+.img_proyecto {
     width: 100%;
     //height: 30vh;
     height: 30vh;
     object-fit: cover;
 }
 
-.text{
+.text {
     width: 100%;
     padding: 1rem;
     color: white;
@@ -59,36 +68,36 @@
     font-size: 18px;
 }
 
-.icon{
+.icon {
     font-size: 20px;
 }
 
-.boton_proyecto_secundario{
+.boton_proyecto_secundario {
     margin-right: 1rem;
 }
 
-.ocultar{
+.ocultar {
     display: none;
 }
 
-.mostrar{
+.mostrar {
     display: block;
 }
 
 
-.img-coding{
+.img-coding {
     width: 60%;
     height: auto;
     display: block;
     margin: 0px auto;
-    
+
 }
 
 .alert {
     margin-bottom: 0rem !important;
 }
 
-.banners{
+.banners {
     width: 200;
     height: 200px;
     display: block;
@@ -96,53 +105,53 @@
     cursor: pointer;
 }
 
-.centrado{
+.centrado {
     margin: 0px auto;
 }
 
-@media (max-width: 575.98px) { 
-    
-    .boton_proyecto_secundario{
+@media (max-width: 575.98px) {
+
+    .boton_proyecto_secundario {
         margin-right: 0rem;
     }
 
 
- }
+}
 
-@media (min-width: 576px) and (max-width: 767.98px) { 
- 
-   .boton_proyecto_secundario{
-    margin-right: 1rem;
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .boton_proyecto_secundario {
+        margin-right: 1rem;
     }
 
 }
 
- @media (min-width: 768px) and (max-width: 991.98px) { 
-  
-   .boton_proyecto_secundario{
-    margin-right: 1rem;
-    }
-    
- }
+@media (min-width: 768px) and (max-width: 991.98px) {
 
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-   
-    .boton_proyecto_secundario{
+    .boton_proyecto_secundario {
         margin-right: 1rem;
     }
-       
- }
 
-@media (min-width: 1200px) { 
-    .tarjetas{
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .boton_proyecto_secundario {
+        margin-right: 1rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .tarjetas {
         width: 510px;
     }
 
- }
+}
 
- @media (min-width: 1400px) { 
-    .tarjetas{
+@media (min-width: 1400px) {
+    .tarjetas {
         width: 600px;
     }
 
- }
+}
