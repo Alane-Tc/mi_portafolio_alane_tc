@@ -1,0 +1,26 @@
+.circle {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* Ajusta el tamaño del círculo y la imagen para pantallas más grandes */
+    .circle {
+        max-width: 400px;
+    }
+
+    .espacio_15 {
+        padding-top: 20px;
+    }
+}
