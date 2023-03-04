@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { HomeComponent } from './home.component';
 import { HeaderFooterModule } from '../components/header-footer/header-footer.module';
 import { PagesModule } from '../components/pages/pages.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
     declarations:[
@@ -12,7 +13,8 @@ import { PagesModule } from '../components/pages/pages.module';
     ],
     imports:[
         HeaderFooterModule,
-        PagesModule
+        PagesModule,
+        SharedModule
     ]
 })
 

@@ -1,0 +1,157 @@
+@import "../../../../styles.scss", "./../../../components/sass/fonts.scss";
+
+.boton-1 {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    padding: 10px 15px;
+}
+
+.titulos_principales {
+    font-size: 60px;
+    font-family: SmoochSansBold;
+}
+
+.subtitulo {
+    font-size: 55px;
+    font-family: SmoochSansBold;
+}
+
+.espacio_15 {
+    padding-top: 25px;
+}
+
+.portafolio {
+    width: 100%;
+    display: -webkit-box;
+    //display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    //-ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    //-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.tarjetas {
+    width: 450px;
+    margin: 20px auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden !important;
+    position: relative;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.img_proyecto {
+    width: 100%;
+    //height: 30vh;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.text {
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.boton_proyecto_secundario {
+    margin-right: 1rem;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+
+.img-coding {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+
+}
+
+.alert {
+    margin-bottom: 0rem !important;
+}
+
+.banners {
+    width: 200;
+    height: 200px;
+    display: block;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.centrado {
+    margin: 0px auto;
+}
+
+@media (max-width: 575.98px) {
+
+    .boton_proyecto_secundario {
+        margin-right: 0rem;
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .boton_proyecto_secundario {
+        margin-right: 1rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .boton_proyecto_secundario {
+        margin-right: 1rem;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .boton_proyecto_secundario {
+        margin-right: 1rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .tarjetas {
+        width: 510px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .tarjetas {
+        width: 600px;
+    }
+
+}

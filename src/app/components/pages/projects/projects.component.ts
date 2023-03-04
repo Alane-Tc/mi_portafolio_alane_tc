@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-
+  selectedOption: string = 'seleccion_proyecto';
+  clase_animacion = 'animate__animated animate__slideInLeft';
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
