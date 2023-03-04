@@ -12,15 +12,14 @@
 
         <div class="col-md-4">
             <label for="exampleFormControlInput1" class="form-label">Seleccione un tipo de proyecto</label>
-            <select class="form-select" id="filtro_proyectos" onchange="filtroProyectos()">
+            <select class="form-select" [(ngModel)]="selectedOption">
                 <option selected disabled>Seleccione una opción</option>
                 <option value="proyectos_personales">Proyectos personales</option>
                 <option value="proyectos_freelancer">Proyectos de Freelancer</option>
-                <!-- <option value="proyectos_diseño">Diseño Grafico</option> -->
             </select>
         </div>
 
-        <section id="principal" class="mostrar mt-5">
+        <section id="principal" class="mostrar mt-5" *ngIf="selectedOption === 'seleccion_proyecto'">
             <div class="col-md-12 text-center">
                 <div class="alert alert-primary" role="alert">
                     Seleccione un tipo de proyecto
@@ -32,7 +31,7 @@
         </section>
 
         <!--Proyectos personales-->
-        <section id="proyectos_personales" class="ocultar">
+        <section class="{{clase_animacion}}" *ngIf="selectedOption === 'proyectos_personales'">
             <div class="col-md-12">
                 <div class="espacio_15"></div>
                 <h2 class="text-center mt-3 subtitulo"><b>Proyectos personales</b></h2>
@@ -152,7 +151,7 @@
         </section>
 
         <!--Proyectos freelancer-->
-        <section id="proyectos_freelancer" class="ocultar">
+        <section class="{{clase_animacion}}" *ngIf="selectedOption === 'proyectos_freelancer'">
             <div class="col-md-12">
                 <div class="espacio_15"></div>
                 <h2 class="text-center mt-3 subtitulo"><b>Proyectos de Freelancer</b></h2>

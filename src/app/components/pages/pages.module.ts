@@ -6,6 +6,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { HeaderFooterModule } from '../header-footer/header-footer.module';
+import { CertificateComponent } from './certificates/certificate.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common'; // importa CommonModule
+
 
 @NgModule({
     declarations: [
@@ -14,7 +20,8 @@ import { HeaderFooterModule } from '../header-footer/header-footer.module';
         ExperienceComponent,
         NotFoundComponent,
         ProjectsComponent,
-        SkillsComponent
+        SkillsComponent,
+        CertificateComponent,
     ],
     exports: [
         AboutMeComponent,
@@ -22,10 +29,15 @@ import { HeaderFooterModule } from '../header-footer/header-footer.module';
         ExperienceComponent,
         NotFoundComponent,
         ProjectsComponent,
-        SkillsComponent
+        SkillsComponent,
+        //CertificateComponent
     ],
     imports: [
-        HeaderFooterModule
+        HeaderFooterModule,
+        SharedModule,
+        FormsModule,
+        BrowserModule,
+        CommonModule
     ]
 })
 
