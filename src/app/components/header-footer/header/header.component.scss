@@ -1,11 +1,11 @@
 @import "../../sass/text_decoration.scss", '../../sass/fonts';
 
-.sombreado{
+.sombreado {
     background-color: #00000088 !important;
     height: 100%;
 }
 
-#index{
+#index {
     background-image: url('../../../../assets/img/imagen_codigo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,12 +18,12 @@
     min-height: 500px;
 }
 
-#logo-img{
+#logo-img {
     width: 50px;
     height: 50px;
 }
 
-#offcanvasNavbarLabel{
+#offcanvasNavbarLabel {
     color: white;
     @include textDecorationBlack()
 }
@@ -31,16 +31,16 @@
 .offcanvas-start {
     width: 210px;
     background: #315659;
-   
+
 }
 
 
-#foto-perfil{
+#foto-perfil {
     border-radius: 50%;
     border: 5px solid white;
 }
 
-#nombre_titulo{
+#nombre_titulo {
     color: #3B82F6;
     font-size: 60px;
     @include textDecorationWhite();
@@ -48,43 +48,47 @@
     font-family: RobotoBoldItalic;
 }
 
-#puesto_titulo{
+#puesto_titulo {
     @include textDecorationBlack();
     font-size: 20px;
     margin-top: 2rem;
     font-family: RobotoBoldItalic;
 }
 
-#navbar-color{
+#navbar-color {
     background: #315659 !important;
     padding: 20px;
 }
 
-.nav-item{
-    a{
+.nav-item {
+    a {
         color: white;
         font-size: 18px;
     }
 
-    a:hover{
+    a:hover {
         color: #253031;
-        animation: headShake; 
-        animation-duration: 2s; 
+        animation: headShake;
+        animation-duration: 2s;
     }
 }
 
-/*Responsive*/
-@media (max-width: 575.98px) { 
-    .p-5 {
-        padding: 1rem!important;
-    }
-   
- }
+.dropdown-item {
+    color: black !important;
+}
 
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    
+/*Responsive*/
+@media (max-width: 575.98px) {
     .p-5 {
-        padding: 2rem!important;
+        padding: 1rem !important;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .p-5 {
+        padding: 2rem !important;
     }
 
 }
