@@ -6,6 +6,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { HeaderFooterModule } from '../header-footer/header-footer.module';
+import { CertificateUdemyComponent } from './certificates/udemy/certificate-udemy.component';
+import { CertificateEdteamComponent } from './certificates/edteam/certificate-edteam.component';
 import { CertificateComponent } from './certificates/certificate.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { FormsModule } from '@angular/forms';
@@ -21,16 +23,17 @@ import { CommonModule } from '@angular/common'; // importa CommonModule
         NotFoundComponent,
         ProjectsComponent,
         SkillsComponent,
-        CertificateComponent,
+        CertificateUdemyComponent,
+        CertificateEdteamComponent,
+        CertificateComponent
     ],
     exports: [
         AboutMeComponent,
-        ContactComponent,
+        //ContactComponent,
         ExperienceComponent,
         NotFoundComponent,
         ProjectsComponent,
         SkillsComponent,
-        //CertificateComponent
     ],
     imports: [
         HeaderFooterModule,

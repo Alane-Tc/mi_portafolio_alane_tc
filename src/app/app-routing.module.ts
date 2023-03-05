@@ -4,6 +4,8 @@ import { ProjectsComponent } from './components/pages/projects/projects.componen
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component'
 import { ContactComponent } from './components/pages/contact/contact.component'
+import { CertificateUdemyComponent } from './components/pages/certificates/udemy/certificate-udemy.component';
+import { CertificateEdteamComponent } from './components/pages/certificates/edteam/certificate-edteam.component';
 import { CertificateComponent } from './components/pages/certificates/certificate.component';
 
 const routes: Routes = [
@@ -12,6 +14,8 @@ const routes: Routes = [
   { path: 'proyectos', component: ProjectsComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'certificados', component: CertificateComponent },
+  { path: 'certificados/udemy', component: CertificateUdemyComponent },
+  { path: 'certificados/edteam', component: CertificateEdteamComponent },
   { path: '**', redirectTo: 'not-found', pathMatch: 'full' },
 ];
 
