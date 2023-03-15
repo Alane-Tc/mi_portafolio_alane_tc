@@ -1,62 +1,88 @@
 @import '../../../../styles';
-.icons{
+
+.icons {
     font-size: 125px;
     margin-left: 1rem;
     cursor: pointer;
 }
 
-.icons:hover{
-    animation: flash; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */ 
+.icons:hover {
+    animation: flash;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
 }
 
-#html{
+#html {
     color: #E44D25;
 }
 
 
-#css{
+#css {
     color: #379AD6;
 }
 
-#js{
+#js {
     color: #FEBE1F;
 }
 
-#boostrap{
+#boostrap {
     color: #8D13FD;
 }
 
-#git{
+#git {
     color: #F3501D;
 }
 
-#sass{
+#sass {
     color: #CD6799;
 }
 
+#angular {
+    color: red;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+#C {
+    margin-top: -20px;
+}
+
+.logo-img {
+    width: 80%;
+}
+
 /*Responsive*/
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     .p-5 {
-        padding: 1rem!important;
+        padding: 1rem !important;
     }
 
-    .icons{
+    .icons {
         font-size: 90px;
     }
-    
 
-   
- }
+    .logo-img {
+        width: 150px;
+    }
+}
 
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    
+@media (min-width: 576px) and (max-width: 767.98px) {
+
     .p-5 {
-        padding: 2rem!important;
+        padding: 2rem !important;
     }
 
-    .icons{
+    .icons {
         font-size: 100px;
+    }
+
+    .logo-img {
+        width: 200px;
     }
 
 }
