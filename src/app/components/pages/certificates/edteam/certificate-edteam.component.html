@@ -9,10 +9,14 @@
         <div class="col-md-12">
             <h1 class="text-center titulos_principales">Certificados de EDTeam</h1>
         </div>
-
+        <app-loading *ngIf="isloading"></app-loading>
         <div class="container">
-            <div class="row">
+            <div *ngIf="!isloading" class="row">
 
+                <!-- <div class="col-md-6" *ngFor="let inf of data1">
+                    <app-card [titulo]="inf.nameCertificate" [subtitulo]="inf.endDate" [urlImage]="inf.urlImage"
+                        [url]="inf.urlCetificate" [titulo_del_boton]="'Ver Certificado'"></app-card>
+                </div> -->
                 <div class="col-md-6">
                     <app-card [titulo]="'C# desde Cero'" [subtitulo]="'Enero 2023'"
                         [urlImage]="'https://edteam-media.s3.amazonaws.com/blogs/original/75323425-9ed9-4484-b072-18005273c806.jpg'"
