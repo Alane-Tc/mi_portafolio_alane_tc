@@ -9,9 +9,15 @@
         <div class="col-md-12">
             <h1 class="text-center titulos_principales">Certificados de udemy</h1>
         </div>
+        <app-loading *ngIf="isloading"></app-loading>
 
         <div class="container">
-            <div class="row">
+            <div *ngIf="!isloading" class="row">
+                <!-- <div class="col-md-6" *ngFor="let inf of data1">
+                    <app-card [titulo]="inf.nameCertificate" [subtitulo]="inf.endDate" [urlImage]="inf.urlImage"
+                        [url]="inf.urlCetificate" [titulo_del_boton]="'Ver Certificado'"></app-card>
+                </div> -->
+
                 <div class="col-md-6">
                     <app-card [titulo]="'Lógica Programación: Aprende Programar en Cualquier Lenguaje'"
                         [subtitulo]="' Enero 2019'" [urlImage]="'https://s.udemycdn.com/meta/default-meta-image-v2.png'"
@@ -28,7 +34,8 @@
 
                 <div class="col-md-6">
                     <app-card [titulo]="'Master en CSS: Responsive, SASS, Flexbox, Grid y Bootstrap'"
-                        [subtitulo]="'Septiembre 2021'" [urlImage]="'https://s.udemycdn.com/meta/default-meta-image-v2.png'"
+                        [subtitulo]="'Septiembre 2021'"
+                        [urlImage]="'https://s.udemycdn.com/meta/default-meta-image-v2.png'"
                         [url]="'https://www.udemy.com/certificate/UC-218ad944-c10d-4b9b-ab43-d8283689134b/'"
                         [titulo_del_boton]="'Ver Certificado'"></app-card>
                 </div>
@@ -45,7 +52,7 @@
                         [urlImage]="'https://edteam-media.s3.amazonaws.com/blogs/original/75323425-9ed9-4484-b072-18005273c806.jpg'"
                         [url]="'https://ed.team/premium?cupon=REF-184946'"
                         [titulo_del_boton]="'Ver Certificado'"></app-card>
-                </div> -->
+                </div>  -->
 
             </div>
         </div>

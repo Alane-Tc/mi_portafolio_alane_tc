@@ -13,6 +13,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common'; // importa CommonModule
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { CommonModule } from '@angular/common'; // importa CommonModule
         NotFoundComponent,
         ProjectsComponent,
         SkillsComponent,
+        HttpClientModule
     ],
     imports: [
         HeaderFooterModule,
