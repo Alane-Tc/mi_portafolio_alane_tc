@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/api/api-servise';
+import { MatDialog } from '@angular/material/dialog';
+import { ViewCertificate } from './view-certificate/view-certificate.component';
 
 @Component({
     selector: 'app-certificate-edteam',
@@ -10,12 +12,19 @@ export class CertificateEdteamComponent implements OnInit {
     data: any[] = [];
     isloading = false;
 
-    constructor(private apiService: ApiService) { }
-    
+    constructor(
+        private apiService: ApiService,
+        private dialog: MatDialog
+    ) { }
+
+    // openDialog(url: any): void {
+    //     const dialogRef = this.dialog.open(ViewCertificate, {
+    //         width: '800px',
+    //         data: { certUrl: url },
+    //     });
+    // }
+
     ngOnInit() {
-        // this.apiService.getResultados("https://localhost:44375/api/Certificates/api/GetCertificateEdteam").subscribe((data) => {
-        //     this.data.push(data);
-        // });
         this.mostrarLoading();
 
     }

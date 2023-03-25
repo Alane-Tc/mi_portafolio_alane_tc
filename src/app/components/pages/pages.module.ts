@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common'; // importa CommonModule
 import { HttpClientModule } from '@angular/common/http';
+import { ViewCertificate } from './certificates/edteam/view-certificate/view-certificate.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
         SkillsComponent,
         CertificateUdemyComponent,
         CertificateEdteamComponent,
-        CertificateComponent
+        CertificateComponent,
+        ViewCertificate
     ],
     exports: [
         AboutMeComponent,
@@ -35,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
         NotFoundComponent,
         ProjectsComponent,
         SkillsComponent,
-        HttpClientModule
+        HttpClientModule,
+        ViewCertificate
     ],
     imports: [
         HeaderFooterModule,

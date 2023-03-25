@@ -14,12 +14,12 @@ export class ProjectsComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    this.apiService.getResultados("https://localhost:44375/api/Project/api/GetProjectsPersonalProject").subscribe((data) => {
+    // this.apiService.getResultados("https://localhost:44375/api/Project/api/GetProjectsPersonalProject").subscribe((data) => {
       
-      console.log(data);
-      this.data.push(data);
-    });
-    console.log('data',this.data);
+    //   console.log(data);
+    //   this.data.push(data);
+    // });
+    // console.log('data',this.data);
   }
 
 
