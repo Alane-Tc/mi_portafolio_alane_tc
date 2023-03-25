@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ViewCertificate } from 'src/app/components/pages/certificates/edteam/view-certificate/view-certificate.component';
 @Component({
     selector: 'app-card',
     templateUrl: './card.component.html',
@@ -10,9 +12,18 @@ export class CardComponent implements OnInit {
     @Input() subtitulo: string | undefined;
     @Input() url: string | undefined;
     @Input() titulo_del_boton: string | undefined;
+    @Input() urlCertificado: string | undefined;
 
-    constructor() { }
+    constructor(
+        private dialog: MatDialog
+    ) { }
     ngOnInit(): void { }
 
+    openDialog(url: any): void {
+        const dialogRef = this.dialog.open(ViewCertificate, {
+            width: '800px',
+            data: { certUrl: url },
+        });
+    }
 
 }

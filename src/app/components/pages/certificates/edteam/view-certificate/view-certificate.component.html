@@ -1,0 +1,13 @@
+<!-- <h1 class="h1" mat-dialog-title>Certificado</h1> -->
+<div mat-dialog-content>
+  <app-loading *ngIf="isloading"></app-loading>
+  <ng-container *ngIf="!isloading">
+    <img class="certiciado jus" [src]="data.certUrl" alt="certificado edteam" />
+  </ng-container>
+</div>
+<br>
+<div mat-dialog-actions>
+  <ng-container *ngIf="!isloading">
+    <button type="button" class="btn btn-danger" (click)="onNoClick()">Cerrar</button>
+  </ng-container>
+</div>
