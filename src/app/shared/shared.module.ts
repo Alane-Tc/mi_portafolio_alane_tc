@@ -3,6 +3,8 @@ import { NgModule } from "@angular/core";
 import { HeaderFooterModule } from "../components/header-footer/header-footer.module";
 import { CardComponent } from "./components/card/card.component";
 import { LoadingComponent } from "./components/loading/loading.component";
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
     declarations: [
@@ -15,7 +17,8 @@ import { LoadingComponent } from "./components/loading/loading.component";
     ],
     imports: [
         HeaderFooterModule,
-        CommonModule
+        CommonModule,
+        MatDialogModule
     ]
 })
 export class SharedModule { }

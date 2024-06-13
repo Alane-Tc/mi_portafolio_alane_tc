@@ -3,9 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgwWowModule } from 'ngx-wow';
 import { HomeModule } from './home/home.module';
-import { MatLegacyDialogModule as MatDialogModule } from '@angular/material/legacy-dialog';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,7 @@ import { MatLegacyDialogModule as MatDialogModule } from '@angular/material/lega
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgwWowModule,
+    //NgwWowModule,
     HomeModule,
     MatDialogModule
   ],
