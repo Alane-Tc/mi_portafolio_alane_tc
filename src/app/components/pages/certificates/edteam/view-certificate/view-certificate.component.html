@@ -8,6 +8,9 @@
 <br>
 <div mat-dialog-actions>
   <ng-container *ngIf="!isloading">
-    <button type="button" class="btn btn-danger" (click)="onNoClick()">Cerrar</button>
+    <!-- <button type="button" class="btn btn-danger" (click)="onNoClick()">Cerrar</button> -->
+    <div class="d-grid gap-2 col-6 mx-auto mb-3">
+      <button class="btn btn-danger" type="button" (click)="onNoClick()">Cerrar</button>
+    </div>
   </ng-container>
 </div>
