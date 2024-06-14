@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+//import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 import { ViewCertificate } from 'src/app/components/pages/certificates/edteam/view-certificate/view-certificate.component';
+import { MatDialog } from '@angular/material/dialog';
 @Component({
     selector: 'app-card',
     templateUrl: './card.component.html',

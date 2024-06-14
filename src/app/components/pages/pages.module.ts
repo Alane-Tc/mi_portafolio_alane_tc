@@ -15,6 +15,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common'; // importa CommonModule
 import { HttpClientModule } from '@angular/common/http';
 import { ViewCertificate } from './certificates/edteam/view-certificate/view-certificate.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { ViewCertificate } from './certificates/edteam/view-certificate/view-cer
         SharedModule,
         FormsModule,
         BrowserModule,
-        CommonModule
+        CommonModule,
+        MatDialogModule
     ]
 })
 
